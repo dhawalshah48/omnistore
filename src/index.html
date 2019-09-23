@@ -1,14 +1,33 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Omnistore</title>
+  <title>OmniStore</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="icon.png" type="image/png">
 </head>
+
 <body>
-  <app-header></app-header>
-  <app-root></app-root>
+  <style>#wrapper
+      {
+       background: papayawhip;
+       text-align: center;
+       width: 50%;
+       margin-left: 20%;
+       align-self: auto;
+
+
+      }</style>
+  <div id = wrapper>
+      <app-header></app-header>
+      <app-nav-bar></app-nav-bar>
+      <app-root></app-root>
+      <app-footer></app-footer>
+  </div>
+
+
 </body>
+
 </html>

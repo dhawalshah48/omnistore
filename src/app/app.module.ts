@@ -20,7 +20,7 @@ import { MenuComponentComponent } from './menu-component/menu-component.componen
     HttpClientModule,
     RouterModule.forRoot(
       [
-        { path: '', redirectTo: '/header', pathMatch: 'full' },
+        { path: '', component: MenuComponentComponent, pathMatch: 'full' },
        { path: 'header', component: HeaderComponent }
 
       ]

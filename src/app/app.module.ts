@@ -37,10 +37,6 @@ import { ProfileComponent } from './profile/profile.component';
     HttpClientModule,
     RouterModule.forRoot(
       [
-<<<<<<< HEAD
-        { path: '', component: MenuComponentComponent, pathMatch: 'full' },
-       { path: 'header', component: HeaderComponent }
-=======
         { path: '', component: MainComponent },
         { path: 'home', component: MainComponent },
         { path: 'login', component: LoginComponent },
@@ -49,7 +45,6 @@ import { ProfileComponent } from './profile/profile.component';
         { path: 'sell', component: SellComponent },
         { path: 'cart', component: CartComponent },
         { path: 'profile', component: ProfileComponent },
->>>>>>> 1b8840151825bbe8d2750b1cfe1480712e1a25f6
 
       ]
     )

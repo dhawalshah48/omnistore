@@ -5,7 +5,7 @@ var path = require('path')
 var http = require('http')
 
 var app = express()
-var usercontroller = require('./server/controller/index')
+var index = require('./server/controller/index')
 
 app.options("/*", function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');

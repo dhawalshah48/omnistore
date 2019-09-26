@@ -5,7 +5,7 @@ var path = require('path')
 var http = require('http')
 
 var app = express()
-var usercontroller = require('./server/controller/usercontroller')
+var usercontroller = require('./server/controller/index')
 
 app.options("/*", function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -22,10 +22,9 @@ app.all('*', function(req, res, next) {
 app.use(body.json())
 app.use(body.urlencoded({ extended: false }))
 
-app.use(express.static(path.join(__dirname, 'dist/myangularapp')))
+app.use(express.static(path.join(__dirname, 'dist/omnistore')))
 
-app.use(usercontroller)
-app.use('/webapi', usercontroller)
+app.use(index)
 app.set('port', 3000)
 const port = 3000
 

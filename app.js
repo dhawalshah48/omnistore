@@ -25,7 +25,6 @@ app.use(body.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'dist/myangularapp')))
 
 app.use(usercontroller)
-app.use('/webapi', usercontroller)
 app.set('port', 3000)
 const port = 3000
 

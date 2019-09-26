@@ -18,7 +18,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onClickSubmit(data){
-    this.http.post("http://localhost:3000/webapi/insertdata",data).map((res) => res.json()).subscribe((data) => this.showresponse(data))
+    this.http.post("http://localhost:3000/insertdata",data).map((res) => res.json()).subscribe((data) => this.showresponse(data))
   }
 
   showresponse(data){

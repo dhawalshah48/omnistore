@@ -55,6 +55,6 @@ import { ProfileComponent } from './profile/profile.component';
     )
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, NavBarComponent,FooterComponent]
+  bootstrap: [AppComponent, HeaderComponent, NavBarComponent, FooterComponent]
 })
 export class AppModule { }

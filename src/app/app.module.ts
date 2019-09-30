@@ -44,7 +44,8 @@ import { ProfileComponent } from './profile/profile.component';
         { path: 'showCategory', component: ShowCategoryComponent },
         { path: 'sell', component: SellComponent },
         { path: 'cart', component: CartComponent },
-        { path: 'profile', component: ProfileComponent },
+        { path: 'profile', component: ProfileComponent
+       },
 
       ]
     )

@@ -1,0 +1,54 @@
+.login-box-center {
+    margin: 0 auto;
+    padding: 5rem 0;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.login-option {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.card:active {
+    transform: scale(1.02) translateY(-2.5px);
+}
+
+@media only screen and (max-width: 700px) {
+    .login-box-center {
+        transform: scale(.6);
+        padding: 0;
+    }
+    .login-option {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .login-box-center {
+        transform: translateY(-6rem) scale(.6);
+        padding: 0;
+    }
+    .main-row {
+        height: 640px;
+    }
+}

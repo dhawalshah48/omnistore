@@ -8,7 +8,6 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './main/main.component';
@@ -17,13 +16,14 @@ import { ShowCategoryComponent } from './show-category/show-category.component';
 import { SellComponent } from './sell/sell.component';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UserLoginComponent } from './login/user-login/user-login.component';
+import { MerchantLoginComponent } from './login/merchant-login/merchant-login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavBarComponent,
     LoginComponent,
     RegisterComponent,
     MainComponent,
@@ -32,6 +32,8 @@ import { ProfileComponent } from './profile/profile.component';
     SellComponent,
     CartComponent,
     ProfileComponent,
+    UserLoginComponent,
+    MerchantLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,21 +41,8 @@ import { ProfileComponent } from './profile/profile.component';
     FormsModule,
     HttpClientModule,
     HttpModule,
-    RouterModule.forRoot(
-      [
-        { path: '', component: MainComponent },
-        { path: 'home', component: MainComponent },
-        { path: 'login', component: LoginComponent },
-        { path: 'register', component: RegisterComponent },
-        { path: 'showCategory', component: ShowCategoryComponent },
-        { path: 'sell', component: SellComponent },
-        { path: 'cart', component: CartComponent },
-        { path: 'profile', component: ProfileComponent },
-
-      ]
-    )
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, NavBarComponent,FooterComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

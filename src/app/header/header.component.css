@@ -1,8 +1,23 @@
-#header{
-  background: pink;
-  width: 50%;
-  height: 50px;
-  text-align: center;
-  margin-left: 30%;
+#header {
+    background: pink;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin-left: 30%;
+}
 
+.righty {
+    float: right;
+}
+
+.omnistore {
+    background-image: linear-gradient(to right bottom, lightblue, lightgreen, lightblue);
+    padding: 1rem 0;
+}
+
+.omnistore-text {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: black;
 }

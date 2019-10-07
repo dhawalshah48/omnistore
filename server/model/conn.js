@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-var url = 'mongodb://localhost:27017/angular'
+var url = 'mongodb://localhost:27017/omnistore'
 
 mongoose.connect(url)
 

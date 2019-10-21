@@ -1,13 +1,44 @@
 
-<div id="nav" >
-
-        <a routerLink="home">Home</a>&nbsp;
-        <a routerLink="login">Login</a>&nbsp;
-        <a routerLink="register">Register</a>&nbsp;
-        <a routerLink="showCategory">Show Category</a>&nbsp;
-        <a routerLink="sell">Sell</a> &nbsp;
-        <a  routerLink="cart">cart</a>&nbsp;
-        <a  routerLink="profile">Profile</a>&nbsp;
-
-
-</div>
+<div id="menu-wrapper">
+        <ul id="mymenu">
+          <li class="current_page_item">
+            <a routerLink="home">
+              <span>Homepage</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="showCategory">
+              <span>Show Category</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="sell">
+              <span>Sell</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="cart">
+              <span>Cart</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="register">
+              <span>Register</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="login">
+              <span>Login</span>
+            </a>
+          </li>
+          <li class="current_page_item">
+            <a routerLink="profile">
+              <span>Profile</span>
+            </a>
+          </li>
+        </ul>
+        <script type="text/javascript">
+          $('#mymenu').dropotron();
+        </script>
+      </div>
+      <!-- end #menu -->

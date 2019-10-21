@@ -1,9 +1,92 @@
-#nav
+/* Menu */
 
-{
-  margin: auto;
-  margin-top: 8%;
-  background: beige;
-  height:50px;
-  text-align: center;
+#menu-wrapper {
+	width: 980px;
+	height: 60px;
+	margin: 0px auto;
+	padding: 0px;
+	background: #3FA43A;
+	border-radius: 10px;
+}
+
+#mymenu {
+	margin: 0;
+	padding: 0px 20px;
+	list-style: none;
+	line-height: 60px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-transform: lowercase;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	font-family: 'Abel', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+#mymenu li {
+	float: left;
+	margin-right: 1px;
+}
+
+#mymenu a {
+	display: block;
+	float: left;
+	height: 60px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+
+#mymenu .current_page_item a {
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	background: #378C32;
+}
+
+#mymenu a:hover {
+	background: #378C32;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+	color: #FFFFFF;
+}
+
+#mymenu span {
+	padding: 0px 20px;
+}
+
+#mymenu > li {
+}
+
+#mymenu > li.active {
+	background: #378C32;
+	color: #FFFFFF;
+}
+
+.dropotron li.opener {
+	border-right: solid 2px #FFFFFF;
+}
+
+.dropotron {
+	margin: 0px;
+	padding: 10px 0px;
+	background: #378C32;
+	list-style: none;
+	text-transform: lowercase;
+	font-family: 'Abel', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.dropotron a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.dropotron li {
+	margin: 0px;
+	padding: 5px 20px;
+}
+
+.dropotron li:hover, .dropotron li.active {
+	background: #4DA43A;
 }

@@ -18,6 +18,7 @@ import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserLoginComponent } from './login/user-login/user-login.component';
 import { MerchantLoginComponent } from './login/merchant-login/merchant-login.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component'
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { MerchantLoginComponent } from './login/merchant-login/merchant-login.co
     ProfileComponent,
     UserLoginComponent,
     MerchantLoginComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,6 @@ import { MerchantLoginComponent } from './login/merchant-login/merchant-login.co
     HttpModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [FooterComponent,NavBarComponent,HeaderComponent,AppComponent]
 })
 export class AppModule { }

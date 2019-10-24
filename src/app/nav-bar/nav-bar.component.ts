@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http'
+import 'rxjs/add/operator/map'
+import { Subscriber } from '../../../node_modules/rxjs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: Http) { }
+
+  onClickSubmitUser(data){
+    console.log(data);
+  }
+
+
 
   ngOnInit() {
   }

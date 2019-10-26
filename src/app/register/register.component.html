@@ -2,27 +2,82 @@
   <div class="contentbg">
     <div class="post">
       <h3>{{d.r}}</h3>
-      <h2 class="title">
+      <h2 class="title" align="center">
         Register Here
       </h2>
-      <form #userregistration ="ngForm" (ngSubmit) = "onClickSubmit(userregistration.value)">
-        Username<input type="text" name="unm" ngModel><br><br>
-        Password<input type="password" name="pass" ngModel><br><br>
-        Address<br><textarea name="address" ngModel></textarea><br><br>
-        City<select name="city" ngModel>
-          <option>Select city</option>
-          <option>Indore</option>
-          <option>Ujjain</option>
-          <option>Bhopal</option>
-        </select><br><br>
-        Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" ngModel>
-        Male &nbsp;&nbsp;&nbsp;
-        <input type="radio" name="gender" value="female" ngModel>
-        Female &nbsp;&nbsp;&nbsp;<br><br>
-        <input type="submit" value="submit" ngModel>
+      <form #userregistration="ngForm" (ngSubmit)="onClickSubmit(userregistration.value)">
+        <table align="center">
+          <tr>
+            <td class="text">Name :</td>
+            <td class="input"><input required type='text' placeholder='Name' name="name" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">UserName :</td>
+            <td class="input"><input type='text' placeholder='UserName' name="uname" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">Password :</td>
+            <td class="input"><input type='password' placeholder='Password' name="pass" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">Mobile Number :</td>
+            <td class="input"><input type='number' placeholder='Mobile Number' name="mob" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">Email :</td>
+            <td class="input"><input type='email' placeholder='Email' name="email" ngModel></td>
+          </tr>
+        </table>
+        <table align="center" id="seller" style="display: none;">
+          <tr>
+            <td class="text">Adress :</td>
+            <td class="input"><input type="textarea" placeholder="Address" name="add" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">Shop Name :</td>
+            <td class="input"><input type="text" placeholder="Shop Name" name="sname" ngModel></td>
+          </tr>
+          <tr>
+            <td class="text">Location :</td>
+            <td class="input"><input type="text" placeholder="Location" name="loc" ngModel></td>
+          </tr>
+          <tr style="height: 64px;">
+            <td class="text">Home Delivery :</td>
+            <td class="input">
+              <input type='radio' id="no" name="delivery" value="no" ngModel>
+              <label for="no">
+                NO
+              </label>
+              <input type='radio' id="yes" name="delivery" value="yes" ngModel>
+              <label for="yes">
+                YES
+              </label>
+            </td>
+          </tr>
+        </table>
+        <table align="center">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <tr id="show" style="height: 64px;">
+            <td colspan="2" onclick="toggle('show')" style="cursor: pointer;">
+              <span class="click">If Seller/Service Provider click here </span><span
+                class="glyphicon glyphicon-chevron-down"></span>
+            </td>
+          </tr>
+          <tr id="hide" style="display: none;height: 64px;">
+            <td colspan="2" onclick="toggle('hide')" style="cursor: pointer;">
+              <span class="click">If Seller/Service Provider click here </span><span
+                class="glyphicon glyphicon-chevron-up"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" value="Register">Submit</button>
+            </td>
+          </tr>
+        </table>
       </form>
-      <div class="entry">
-      </div>
     </div>
     <div style="clear: both;">&nbsp;</div>
   </div>

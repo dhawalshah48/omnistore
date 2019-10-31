@@ -71,7 +71,7 @@
             </a>
           </div>
         </li>
-        <li class="mySlides">
+        <li class="mySlides" style="display: none;">
           <div class="col-md-2 focus-grid">
             <a href="categories.html#parentVerticalTab7">
               <div class="focus-border">
@@ -140,27 +140,8 @@
       </div>
 
       <div class="clearfix"></div>
-
-
     </div>
   </div>
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-  </script>
 
 
   <div class="trending-ads">

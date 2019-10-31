@@ -6,6 +6,10 @@
   padding: 0px 0;
 }
 
+li{
+  list-style-type: none;
+}
+
 .categories h2 {
   font-size: 40px;
   text-align: center;

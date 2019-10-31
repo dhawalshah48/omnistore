@@ -1,7 +1,8 @@
+<app-nav-bar></app-nav-bar>
 <div id="content">
   <div class="contentbg">
     <div class="post">
-      <h3>{{d.r}}</h3>
+      <h3 align = "center">{{d.r}}</h3>
       <h2 class="title" align="center">
         Register Here
       </h2>
@@ -60,14 +61,14 @@
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
           <tr id="show" style="height: 64px;">
-            <td colspan="2" onclick="toggle('show')" style="cursor: pointer;">
+            <td colspan="2" onclick="toggle('show')" style="cursor: pointer;" (click)='flag = 0'>
               <span class="click">If Seller/Service Provider click here </span><span
                 class="glyphicon glyphicon-chevron-down"></span>
             </td>
           </tr>
           <tr id="hide" style="display: none;height: 64px;">
-            <td colspan="2" onclick="toggle('hide')" style="cursor: pointer;">
-              <span class="click">If Seller/Service Provider click here </span><span
+            <td colspan="2" onclick="toggle('hide')" style="cursor: pointer;" (click)='flag = 1'>
+              <span class="click">Collapse</span><span
                 class="glyphicon glyphicon-chevron-up"></span>
             </td>
           </tr>

@@ -1,27 +1,27 @@
 <div id="menu-wrapper">
   <ul id="mymenu">
     <li class="current_page_item">
-      <a routerLink="home">
+      <a routerLink="../home">
         <span>Homepage</span>
       </a>
     </li>
     <li class="current_page_item">
-      <a routerLink="showCategory">
+      <a routerLink="../showCategory">
         <span>Show Category</span>
       </a>
     </li>
     <li class="current_page_item">
-      <a routerLink="sell">
+      <a routerLink="../sell">
         <span>Sell</span>
       </a>
     </li>
     <li class="current_page_item">
-      <a routerLink="cart">
+      <a routerLink="../cart">
         <span>Cart</span>
       </a>
     </li>
     <li class="current_page_item">
-      <a routerLink="register">
+      <a routerLink="../register">
         <span>Register</span>
       </a>
     </li>
@@ -31,7 +31,7 @@
       </a>
     </li>
     <li class="current_page_item">
-      <a routerLink="profile">
+      <a routerLink="../profile">
         <span>Profile</span>
       </a>
     </li>
@@ -90,7 +90,8 @@
 
 <div id="user-login" class="modal">
 
-  <form #userLogin = "ngForm" (ngSubmit)="onClickSubmitUser(userLogin.value)" class="modal-content-1 animate" action="/action_page.php" >
+  <form #userLogin="ngForm" (ngSubmit)="onClickSubmitUser(userLogin.value)" class="modal-content-1 animate"
+    action="/action_page.php">
 
     <div class="imgcontainer">
       <span onclick="document.getElementById('user-login').style.display='none'" class="close"
@@ -116,7 +117,8 @@
 
 <div id="merchant-login" class="modal">
 
-  <form #merchantLogin = "ngForm" (ngSubmit)="onClickSubmitUser(merchantLogin.value)" class="modal-content-1 animate" action="/action_page.php">
+  <form #merchantLogin="ngForm" (ngSubmit)="onClickSubmitMerchant(merchantLogin.value)" class="modal-content-1 animate"
+    action="/action_page.php">
 
     <div class="imgcontainer">
       <span onclick="document.getElementById('merchant-login').style.display='none'" class="close"

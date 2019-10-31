@@ -6,6 +6,23 @@ router.get('/', function (req, res) {
     res.send('This is MEAN STACK app server')
 })
 
+router.post('/loginauthentication', function (req, res, next) {
+    emailid = req.body
+    usersmodel.authenticationupdate(emailid, function (result) {
+        if (result)
+            res.redirect('/login')
+        else
+            res.redirect('/register');
+    })
+});
+
+router.all('/checkdata', function (req, res, next) {
+    usermodel.userlogin(req.body, function (result) {
+        res.json(result)
+    })
+});
+
+
 router.post('/insertdata', function (req, res) {
     usermodel.insertdata(req.body, function (result) {
         res.json(result)
@@ -20,7 +37,7 @@ router.get('/viewall', function (req, res) {
 
 router.post('/deletedata', function (req, res) {
     var d = req.body
-    console.log('------------------>>>>>'+d._id)
+    console.log('------------------>>>>>' + d._id)
     usermodel.deletedata('register', d, function (result) {
         res.json(result)
     })

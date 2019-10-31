@@ -11,6 +11,8 @@ import { Subscriber } from '../../../node_modules/rxjs';
 export class RegisterComponent implements OnInit {
 
   d={"r":null}
+  flag = 1
+  data1 = {}
   constructor(private http: Http) { }
 
   ngOnInit() {
@@ -18,8 +20,20 @@ export class RegisterComponent implements OnInit {
   }
 
   onClickSubmit(data){
-    /*this.http.post("http://localhost:3000/insertdata",data).map((res) => res.json()).subscribe((data) => this.showresponse(data))*/
     console.log(data)
+    if(this.flag == 0){
+      data["type"]=this.flag
+      this.http.post("http://localhost:3000/insertdata",data).map((res) => res.json()).subscribe((data) => this.showresponse(data))
+    }
+    else{
+      this.data1['name'] = data['name']
+      this.data1['uname'] = data['uname']
+      this.data1['email'] = data['email']
+      this.data1['mob'] = data['mob']
+      this.data1['pass'] = data['pass']
+      this.data1['type'] = this.flag
+      this.http.post("http://localhost:3000/insertdata",this.data1).map((res) => res.json()).subscribe((data) => this.showresponse(data))
+    }
   }
 
   showresponse(data){

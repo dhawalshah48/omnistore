@@ -18,7 +18,8 @@ import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserLoginComponent } from './login/user-login/user-login.component';
 import { MerchantLoginComponent } from './login/merchant-login/merchant-login.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component'
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavUserComponent } from './nav-user/nav-user.component'
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component'
     ProfileComponent,
     UserLoginComponent,
     MerchantLoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    NavUserComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component'
     HttpModule,
   ],
   providers: [],
-  bootstrap: [FooterComponent,NavBarComponent,HeaderComponent,AppComponent]
+  bootstrap: [FooterComponent,HeaderComponent,AppComponent]
 })
 export class AppModule { }

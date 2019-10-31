@@ -17,6 +17,7 @@ import { ShowCategoryComponent } from './show-category/show-category.component';
 import { SellComponent } from './sell/sell.component';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
+import { BodyComponent } from './body/body.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { ProfileComponent } from './profile/profile.component';
     SellComponent,
     CartComponent,
     ProfileComponent,
+    BodyComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,6 @@ import { ProfileComponent } from './profile/profile.component';
     )
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, NavBarComponent, FooterComponent]
+  bootstrap: [AppComponent, HeaderComponent, NavBarComponent, FooterComponent, BodyComponent]
 })
 export class AppModule { }

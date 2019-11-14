@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  title = 'my location';
+  lat = 22.720154;
+  lng = 75.901287;
 
   constructor() { }
 
